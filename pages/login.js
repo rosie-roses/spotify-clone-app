@@ -4,7 +4,7 @@ import { signIn, getProviders } from "next-auth/react";
 
 export default function Login({ providers }) {
   return (
-    <div className="flex justify-center items-center h-screen text-center flex-col space-y-6">
+    <div className="flex justify-center items-center h-screen text-center flex-col space-y-6 bg-[#050505]">
       <h1 className="text-3xl font-semibold text-white">Welcome to the Spotify Clone</h1>
       <p className="text-lg text-gray-300">
         Sign in with your Spotify account to start exploring music, playlists, and more.
