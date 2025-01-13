@@ -10,16 +10,12 @@ export default function Login({ providers }) {
         Sign in with your Spotify account to start exploring music, playlists, and more.
       </p>
       <div className="space-y-4 mt-6">
-        {providers &&
-          Object.values(providers).map((provider) => (
-            <Button
-              key={provider.name}
-              className="bg-[#1DB954] text-white w-full p-3 rounded-md"
-              onClick={() => signIn(provider.id, { callbackUrl: "/" })}
-            >
-              Sign in with {provider.name} <Login01Icon className="ml-1" size={20} />
-            </Button>
-          ))}
+        <Button
+          className="bg-[#1DB954] text-white w-full p-3 rounded-md"
+          onClick={() => signIn('spotify', { callbackUrl: "/" })}
+        >
+          Sign in with Spotify <Login01Icon className="ml-1" size={20} />
+        </Button>
       </div>
     </div>
   );
