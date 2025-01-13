@@ -8,9 +8,9 @@ You can try the live demo of the application here:
 ## Features
 
 - User authentication via Spotify OAuth
-- Access to Spotify Web API for fetching user data and playlists
+- Access to Spotify Web API for fetching user data, playlists, saved tracks, saved albums, and searching
 - Real-time music playback using Spotify Web Playback SDK
-- Modern, responsive UI built with React.js (Next.js)
+- Modern UI built with React.js (Next.js)
 
 ## Tech Stack
 
