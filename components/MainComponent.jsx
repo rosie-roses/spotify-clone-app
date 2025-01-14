@@ -1,11 +1,12 @@
 "use client"
 
 import { Avatar, Button, IconButton, InputBase, Paper, Tooltip } from '@mui/material';
-import { Logout01Icon, Search01Icon, SearchRemoveIcon } from 'hugeicons-react';
+import { GithubIcon, Logout01Icon, Search01Icon, SearchRemoveIcon } from 'hugeicons-react';
 import { signOut } from 'next-auth/react';
 import React, { useEffect, useState } from 'react'
 import ContentView from './ContentView';
 import Player from './Player';
+import Link from 'next/link';
 
 function MainComponent({ 
     user, 
@@ -84,6 +85,15 @@ function MainComponent({
                 </Paper>
 
                 <div className='flex items-center ml-auto mr-7'>
+                    <Tooltip title='GitHub Code' arrow>
+                        <Link  
+                            href={'https://github.com/rosie-roses/spotify-clone-app'}
+                            target='_blank'
+                            className='text-[#d2d2d2] text-sm p-0 m-0 hover:bg-transparent'>
+                            <GithubIcon size={20} className='inline-block text-[#d2d2d2]' />
+                        </Link>
+                    </Tooltip>
+
                     <Tooltip title='Log Out' arrow>
                         <Button variant="text" onClick={() => signOut()} className='text-[#d2d2d2] text-sm p-0 m-0 hover:bg-transparent'>
                             <Logout01Icon size={20} className='inline-block text-[#d2d2d2]' />
